@@ -1,0 +1,17 @@
+group 'acmi.l2.clientmod'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    maven { url "https://raw.githubusercontent.com/acmi/L2io/mvn-repo" }
+    maven { url "https://raw.githubusercontent.com/acmi/Serializer/mvn-repo" }
+    maven { url "https://raw.githubusercontent.com/acmi/L2crypt/mvn-repo" }
+    maven { url "https://raw.githubusercontent.com/acmi/L2unreal/mvn-repo" }
+}
+
+dependencies {
+    compile group: 'acmi.l2.clientmod', name: 'l2unreal', version: '1.2'
+
+    compile files('lib/jsquish.jar')
+}
